@@ -40,7 +40,10 @@ export default function RetrievrHome() {
       { threshold: 0.1 }
     )
 
-    observer.observe(document.getElementById('impact-section'))
+    const impactSection = document.getElementById('impact-section')
+    if (impactSection) {
+      observer.observe(impactSection)
+    }
 
     return () => observer.disconnect()
   }, [])
