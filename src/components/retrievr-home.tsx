@@ -1,7 +1,7 @@
 import "./wani.css"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { Search, Camera, Clock, Database, Building2, Users } from "lucide-react"
+import { Search, Camera,Building2, Users } from "lucide-react"
 import Link from "next/link"
 
 export default function RetrievrHome() {
