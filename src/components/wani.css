@@ -311,3 +311,9 @@ footer p {
     -webkit-background-clip: text;
     color: transparent;
 font-size: larger;};
+
+
+.gradient {
+    background: linear-gradient(to bottom, #076fe5 0%, #f9fafb 50%, #dd3535 100%);
+  }
+  
