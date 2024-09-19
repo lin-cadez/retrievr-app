@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Search, Camera, Clock, Database, Building2, Users } from "lucide-react"
 import Link from "next/link"
-import Image from "next/image"
 
 export default function RetrievrHome() {
   return (
