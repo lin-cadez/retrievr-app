@@ -6,9 +6,10 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Search, CheckCircle, Building2, Users } from "lucide-react"
 import Link from "next/link"
-import CountUp from 'react-countup'
 import { Mail, Phone, MapPin } from 'lucide-react'
 import { writeHeapSnapshot } from "v8"
+import CountUp from 'react-countup'
+
 
 export default function RetrievrHome() {
 
