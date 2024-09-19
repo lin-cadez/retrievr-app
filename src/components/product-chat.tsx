@@ -24,8 +24,8 @@ interface Product {
 export default function ProductChatComponent() {
   const [messages, setMessages] = useState<Message[]>([
     { id: 1, text: "Hello! Would you like to claim this product? ", sender: "agent" },
-    { id: 2, text: "Yes, I have lost it yesterday.", sender: "user" },
-    { id: 3, text: "Sure, you can pick it up tommorow at 12.00.", sender: "agent" },
+    { id: 2, text: "Yes, I have lost it Tuesday.", sender: "user" },
+    { id: 3, text: "Sure that sounds right. They were found 3 days ago, you can pick it up tommorow at 12.00.", sender: "agent" },
   ])
   const [inputMessage, setInputMessage] = useState("")
 
