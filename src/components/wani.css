@@ -1,0 +1,313 @@
+/* Global styles to mimic Tailwind */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #1f2937;
+  background-color: #f9fafb;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header, footer {
+  padding: 0 1rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.h-14 {
+  height: 3.5rem;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.space-y-4 > * + * {
+  margin-top: 1rem;
+}
+
+.space-y-2 > * + * {
+  margin-top: 0.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.bg-gray-50 {
+  background-color: #f9fafb;
+}
+
+.bg-gray-800 {
+  background-color: #1f2937;
+}
+
+.bg-gradient-to-b {
+  background: linear-gradient(to bottom, var(--from-color), var(--to-color));
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.border-t {
+  border-top: 1px solid #e5e7eb;
+}
+
+.mt-12 {
+  margin-top: 3rem;
+}
+
+/* Specific component styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.5rem;
+  padding: 0 1.5rem;
+  background-color: white;
+}
+
+.header a {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #1f2937;
+}
+
+.header a:hover {
+  text-decoration: underline;
+}
+
+.main-section {
+  padding: 3rem 0;
+  background: linear-gradient(to bottom, #ebf8ff, #ffffff);
+  text-align: center;
+}
+
+.main-section h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #1f2937;
+}
+
+.main-section p {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #6b7280;
+  font-size: 1.125rem;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.input-field {
+  width: 100%;
+  max-width: 500px;
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+}
+
+.search-button {
+  padding: 0.75rem;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 0.375rem;
+  margin-left: 0.5rem;
+}
+
+.search-button svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.org-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.org-grid div {
+  text-align: center;
+}
+
+.org-grid h3 {
+  font-size: 1.25rem;
+  color: #1f2937;
+}
+
+.org-grid svg {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.org-grid svg:nth-child(1) {
+  color: #3b82f6;
+}
+
+.org-grid svg:nth-child(2) {
+  color: #10b981;
+}
+
+.org-grid svg:nth-child(3) {
+  color: #8b5cf6;
+}
+
+.org-grid svg:nth-child(4) {
+  color: #ef4444;
+}
+
+.items-section {
+  margin-top: 3rem;
+}
+
+.items-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.items-grid img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.items-grid h3 {
+  font-size: 1.25rem;
+}
+
+.contact-section {
+  padding: 3rem 0;
+  background-color: #f3f4f6;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.contact-info p {
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+}
+
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.impact-item h3 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: white;
+  border-top: 1px solid #e5e7eb;
+}
+
+footer p {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+
+.text-green-500 {
+  color: #10b981;
+}
+
+.text-red-500{
+    color: #ef4444;
+
+}
+.text-purple-500{
+    color: #ffd900;
+}
+.text-blue-500{
+    color: #3b82f6;
+}
+.wani-wana {
+    /* Blueish branding gradient for text */
+    background: linear-gradient(145deg, #4facfe, #00f2fe);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+font-size: larger;};
